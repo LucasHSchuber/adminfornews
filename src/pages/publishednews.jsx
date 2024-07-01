@@ -240,22 +240,22 @@ const Publishednews = () => {
       <table className="table ">
         <thead>
           <tr>
-            <th>
+            <th title='Title'>
               <FontAwesomeIcon icon={faT} />
             </th>
-            <th>
+            <th title='Content'>
               <FontAwesomeIcon icon={faAlignJustify} />
             </th>
-            <th>
+            <th title='Uploaded at'>
               <FontAwesomeIcon icon={faClock} />
             </th>
-            <th>
-              <FontAwesomeIcon icon={faPenToSquare} />
+            <th title='Edited at'>
+              <FontAwesomeIcon icon={faPenToSquare}/>
             </th>
-            <th>
+            <th title='Read and confirmed by'>
               <FontAwesomeIcon icon={faGlasses} />
             </th>
-            <th>
+            <th title='Countries'>
               <FontAwesomeIcon icon={faGlobeAmericas} />
             </th>
             <th></th>
