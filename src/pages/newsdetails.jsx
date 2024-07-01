@@ -282,13 +282,13 @@ const Newsdetails = () => {
     navigate('/');
   };
 
-  if (!item) {
-    return <div>No news details available.</div>;
-  }
+  // if (!item) {
+  //   return <div>No news details available.</div>;
+  // }
 
-  if (!pulledNews || !pulledNews.news) {
-    return <div>No news details available.</div>;
-  }
+  // if (!pulledNews || !pulledNews.news) {
+  //   return <div>No news details available.</div>;
+  // }
 
   return (
     <div className="page-wrapper">
