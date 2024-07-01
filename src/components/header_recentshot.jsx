@@ -9,11 +9,11 @@ const Header = () => {
     <header className="header">
       <nav className="nav-nav">
         <ul className="d-flex nav-list">
-          <li>
+          {/* <li>
             <Link to="/" className="navlink">
               Published News
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/recentshot" className="navlink">
               Recent shot

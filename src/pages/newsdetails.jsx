@@ -12,6 +12,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import Editpostmodal from '../components/editpostmodal';
+import Header from '../components/header_publishednews.jsx';
+
 
 const Newsdetails = () => {
 
@@ -400,6 +402,7 @@ const Newsdetails = () => {
         )}
       </div>
 
+      <Header />  
       <Editpostmodal
         show={showModal}
         handleClose={handleCloseModal}

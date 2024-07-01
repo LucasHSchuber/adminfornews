@@ -10,6 +10,8 @@ import {
   faXmark,
 } from '@fortawesome/free-solid-svg-icons';
 
+import Header from '../components/header_recentshot.jsx';
+
 import '../assets/css/main_recentshot.css';
 
 const Recentshot = () => {
@@ -27,10 +29,15 @@ const Recentshot = () => {
   const [isAscendingPhotographer, setIsAscendingPhotographer] = useState(null);
   const [isAscendingDate, setIsAscendingDate] = useState(null);
 
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const token = queryParams.get('token');
+  console.log(token);
+
   const fetchAllData = () => {
     //fetching all users
     const fetchUsers = async () => {
-      const token = '666ab2a5be8ee1.66302861';
+      // const token = '666ab2a5be8ee1.66302861';
       try {
         const responseUsers = await axios.get(
           '/api/index.php/rest/photographer_portal/users',
@@ -65,7 +72,7 @@ const Recentshot = () => {
       }
     };
     const fetchActivities = async () => {
-      const token = '666ab2a5be8ee1.66302861';
+      // const token = '666ab2a5be8ee1.66302861';
       try {
         let responseActivities = await axios.get(
           'api/index.php/rest/photographer_portal/activities',
@@ -135,7 +142,7 @@ const Recentshot = () => {
 
   //if search is entered
   useEffect(() => {
-    const token = '666ab2a5be8ee1.66302861';
+    // const token = '666ab2a5be8ee1.66302861';
 
     const fetchSearchActivities = async () => {
       try {
@@ -553,6 +560,8 @@ const Recentshot = () => {
           )}
         </tbody>
       </table>
+
+      <Header />
     </div>
   );
 };

@@ -5,6 +5,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 
 import Newpostbutton from '../components/newpostbutton';
 import Newpostmodal from '../components/newpostmodal';
+import Header from '../components/header_publishednews.jsx';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -326,6 +327,7 @@ const Publishednews = () => {
         </tbody>
       </table>
 
+      <Header />
       <Newpostbutton onClick={handleOpenModal} />
       <Newpostmodal
         show={showModal}
